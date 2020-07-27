@@ -16,7 +16,7 @@ router.put("/update/:id", middleware.isAdmin, function(req,res){
 });
 
 //tag delete
-router.delete("/delete/;id", middleware.isAdmin, function(req,res){
+router.delete("/delete/:id", middleware.isAdmin, function(req,res){
 
 });
 
