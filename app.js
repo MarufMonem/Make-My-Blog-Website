@@ -10,21 +10,21 @@ var express                 = require("express"),
     bodyParser              = require("body-parser");
 
 // THE SCHEMAS    
-var blog            = require("./models/blog");
-var comment         = require("./models/comment");
-var user            = require("./models/user");
-var faq             = require("./models/faq");
-var update          = require("./models/update");
-var advertisement   = require("./models/advertisement");
+var blog                    = require("./models/blog");
+var comment                 = require("./models/comment");
+var user                    = require("./models/user");
+var faq                     = require("./models/faq");
+var update                  = require("./models/update");
+var advertisement           = require("./models/advertisement");
 
 //THE ROUTES
-var blogRoutes           = require("./routes/blog"),
-    indexRoutes          = require("./routes/index"),
-    adminRoutes          = require("./routes/admin"),
-    userRoutes           = require("./routes/user"),
-    commentRoutes        = require("./routes/comment"),
-    faqRoutes            = require("./routes/faq"),
-    updateRoutes         = require("./routes/update");
+var blogRoutes              = require("./routes/blog"),
+    indexRoutes             = require("./routes/index"),
+    adminRoutes             = require("./routes/admin"),
+    userRoutes              = require("./routes/user"),
+    commentRoutes           = require("./routes/comment"),
+    faqRoutes               = require("./routes/faq"),
+    updateRoutes            = require("./routes/update");
 
 mongoose.set('useUnifiedTopology', true); //removing deprication errors
 mongoose.connect("mongodb://localhost/blogWebsite" ,{ useNewUrlParser: true });
