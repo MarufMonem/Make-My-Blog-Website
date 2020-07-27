@@ -51,7 +51,7 @@ router.get("/allUpdates", middleware.isAdmin, function(req,res){
 });
 
 //show all advertisements
-router.get("/allads", middleware.isAdmin, function(req,res){
+router.get("/allAdvertisements", middleware.isAdmin, function(req,res){
 
 });
 
