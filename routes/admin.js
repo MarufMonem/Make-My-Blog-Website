@@ -50,15 +50,5 @@ router.get("/allUpdates", middleware.isAdmin, function(req,res){
 
 });
 
-//
-router.get("", middleware.isAdmin, function(req,res){
-
-});
-
-//
-router.get("", middleware.isAdmin, function(req,res){
-
-});
-
 
 module.exports = router;
