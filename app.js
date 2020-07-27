@@ -10,12 +10,12 @@ var express                 = require("express"),
     bodyParser              = require("body-parser");
 
 // THE SCHEMAS    
-var product                 = require("./models/product");
-var order                   = require("./models/order");
-var user                    = require("./models/user");
-var cart                    = require("./models/cart");
-var cartItem                = require("./models/cartItem");
-var advertisement           = require("./models/advertisement");
+var blog            = require("./models/blog");
+var comment         = require("./models/comment");
+var user            = require("./models/user");
+var faq             = require("./models/faq");
+var update          = require("./models/update");
+var advertisement   = require("./models/advertisement");
 
 //THE ROUTES
 var blogRoutes           = require("./routes/blog"),
