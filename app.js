@@ -14,7 +14,8 @@ var product                 = require("./models/product");
 var order                   = require("./models/order");
 var user                    = require("./models/user");
 var cart                    = require("./models/cart");
-var cartItem                    = require("./models/cartItem");
+var cartItem                = require("./models/cartItem");
+var advertisement           = require("./models/advertisement");
 
 //THE ROUTES
 var blogRoutes           = require("./routes/blog"),
