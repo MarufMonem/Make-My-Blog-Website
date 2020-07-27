@@ -22,6 +22,12 @@ var blogSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "comment",
         }
+    ],
+    tags:[
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "tag",
+        }
     ]
 });
 
