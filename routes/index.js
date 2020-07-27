@@ -11,27 +11,27 @@ router.get("/", function(req,res){
 });
 
 //login page
-router.get("", function(req,res){
+router.get("/login", function(req,res){
 
 });
 
 // Registration page
-router.get("", function(req,res){
+router.get("/register", function(req,res){
 
 });
 
 //Faq page
-router.get("", function(req,res){
+router.get("/faq", function(req,res){
 
 });
 
 // Update information page
-router.get("", function(req,res){
+router.get("/updates", function(req,res){
 
 });
 
 //logout handler
-router.get("", middleware.isloggedIn ,function(req,res){
+router.get("/logout", middleware.isloggedIn ,function(req,res){
 
 });
 
