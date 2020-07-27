@@ -50,5 +50,10 @@ router.get("/allUpdates", middleware.isAdmin, function(req,res){
 
 });
 
+//show all advertisements
+router.get("/allads", middleware.isAdmin, function(req,res){
+
+});
+
 
 module.exports = router;

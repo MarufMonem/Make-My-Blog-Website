@@ -14,6 +14,7 @@ var blog                    = require("./models/blog");
 var comment                 = require("./models/comment");
 var user                    = require("./models/user");
 var faq                     = require("./models/faq");
+var tag                     = require("./models/tag");
 var update                  = require("./models/update");
 var advertisement           = require("./models/advertisement");
 
@@ -24,6 +25,7 @@ var blogRoutes              = require("./routes/blog"),
     userRoutes              = require("./routes/user"),
     commentRoutes           = require("./routes/comment"),
     faqRoutes               = require("./routes/faq"),
+    taqRoutes               = require("./routes/tag"),
     updateRoutes            = require("./routes/update");
 
 mongoose.set('useUnifiedTopology', true); //removing deprication errors
@@ -73,6 +75,7 @@ app.use("/admin",adminRoutes);
 app.use("/blog",blogRoutes);
 app.use("/comment",commentRoutes);
 app.use("/faq",faqRoutes);
+app.use("/tag",tagRoutes);
 app.use("/update",updateRoutes);
 
 app.listen(5501, "127.0.0.1", function () {
