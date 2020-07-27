@@ -34,7 +34,7 @@ router.post("/", middleware.isloggedIn, function(req,res){
 
 });
 
-//update old blog req 
+//update old blog req
 router.put("", middleware.isBlogOwner ,function(req,res){
 
 });

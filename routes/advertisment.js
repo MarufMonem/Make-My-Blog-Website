@@ -2,20 +2,20 @@
 var express     = require("express");
 var router      = express.Router();
 var user        = require("../models/user");
-var ad         = require("../models/advertisement");
+var ad          = require("../models/advertisement");
 var middleware  = require("../middleware");
 
-//tag create
+//ad create req
 router.post("/create", middleware.isAdmin, function(req,res){
 
 });
 
-//tag create
+//ad update req
 router.put("/update/:id", middleware.isAdmin, function(req,res){
 
 });
 
-//tag delete
+//ad delete req
 router.delete("/delete/:id", middleware.isAdmin, function(req,res){
 
 });
