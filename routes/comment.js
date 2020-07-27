@@ -11,12 +11,12 @@ router.post("/create/:blogId",middleware.isloggedIn, function(req,res){
 });
 
 //delete comment req (both the blog owner and comment owner can delete the comment)
-router.delete("/delete/:blogId", middleware.isCommentOwner, function(req,res){
+router.delete("/delete/:blogId/:id", middleware.isCommentOwner, function(req,res){
 
 });
 
 //update comment req
-router.put("/update/:blogId", middleware.isCommentOwner, function(req,res){
+router.put("/update/:blogId/:id", middleware.isCommentOwner, function(req,res){
 
 });
 
