@@ -22,8 +22,7 @@ var blogSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "comment",
         }
-    ],
-    
+    ]
 });
 
 module.exports= mongoose.model("blog",blogSchema);
