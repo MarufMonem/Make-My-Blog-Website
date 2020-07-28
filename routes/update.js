@@ -7,7 +7,7 @@ var middleware  = require("../middleware");
 
 //update create form
 router.get("/create", middleware.isAdmin, function(req,res){
-
+    res.send("Reached");
 });
 
 //update create req

@@ -12,27 +12,27 @@ router.get("/", function(req,res){
 
 //login page
 router.get("/login", function(req,res){
-
+res.send("Reached");
 });
 
 // Registration page
 router.get("/register", function(req,res){
-
+res.send("Reached");
 });
 
 //Faq page
 router.get("/faq", function(req,res){
-
+res.send("Reached");
 });
 
 // Update information page
 router.get("/updates", function(req,res){
-
+res.send("Reached");
 });
 
 //logout handler
 router.get("/logout", middleware.isloggedIn ,function(req,res){
-
+res.send("Reached");
 });
 
 module.exports = router;

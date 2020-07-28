@@ -7,7 +7,7 @@ var middleware  = require("../middleware");
 
 //tag create form
 router.get("/create", middleware.isAdmin, function(req,res){
-
+    res.send("Reached");
 });
 
 //crating the tag req

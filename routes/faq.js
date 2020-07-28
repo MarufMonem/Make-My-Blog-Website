@@ -7,17 +7,17 @@ var middleware  = require("../middleware");
 
 //show all faq
 router.get("/", function(req,res){
-
+res.send("Reached");
 });
 
 //Create a new faq form page
 router.get("/new", middleware.isAdmin, function(req,res){
-
+res.send("Reached");
 });
 
 //update faq form page
 router.get("/update", middleware.isAdmin, function(req,res){
-
+res.send("Reached");
 });
 
 

@@ -6,12 +6,12 @@ var middleware  = require("../middleware");
 
 //new blog page form
 router.get("/new", middleware.isloggedIn, function(req,res){
-
+res.send("Reached");
 });
 
 //update blog page form
 router.get("/update/:id", middleware.isBlogOwner, function(req,res){
-
+res.send("Reached");
 });
 
 // Registration page
@@ -21,7 +21,7 @@ router.delete("/delete/:id",middleware.isBlogOwner,  function(req,res){
 
 //show all blogs page
 router.get("/show", function(req,res){
-
+res.send("Reached");
 });
 
 // like a particular blog req
