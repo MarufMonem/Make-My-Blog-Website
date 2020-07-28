@@ -12,7 +12,7 @@ router.get("/create", middleware.isAdmin, function(req,res){
 
 //crating the tag req
 router.post("/new", middleware.isAdmin, function(req,res){
-
+    res.send("Reached");
 });
 
 

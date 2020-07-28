@@ -26,8 +26,8 @@ var blogRoutes              = require("./routes/blogs"),
     userRoutes              = require("./routes/user"),
     commentRoutes           = require("./routes/comment"),
     faqRoutes               = require("./routes/faq"),
-    taqRoutes               = require("./routes/tag"),
-    taqRequestRoutes        = require("./routes/tagRequest"),
+    tagRoutes               = require("./routes/tag"),
+    tagRequestRoutes        = require("./routes/tagRequest"),
     updateRoutes            = require("./routes/update");
 
 mongoose.set('useUnifiedTopology', true); //removing deprication errors

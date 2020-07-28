@@ -77,5 +77,12 @@ middlewareObj.isAdmin = function isAdmin(req, res, next) {
         res.redirect("/login");
     }
 }
+
+middlewareObj.isBlogOwner = function isBlogOwner(req, res, next) {
+        return next();
+}
+middlewareObj.isCommentOwner = function isCommentOwner(req, res, next) {
+    return next();
+}
 module.exports = middlewareObj;
 
