@@ -20,7 +20,7 @@ var update                  = require("./models/update");
 var advertisement           = require("./models/advertisement");
 
 //THE ROUTES
-var blogRoutes              = require("./routes/blog"),
+var blogRoutes              = require("./routes/blogs"),
     indexRoutes             = require("./routes/index"),
     adminRoutes             = require("./routes/admin"),
     userRoutes              = require("./routes/user"),

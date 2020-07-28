@@ -1,5 +1,5 @@
-var campground = require("../models/campground");
-var comment = require("../models/comment");
+// var campground = require("../models/campground");
+// var comment = require("../models/comment");
 var middlewareObj = {};
 
 // middlewareObj.checkCampgroundOwnership = function (req, res, next) { //Middleware to check authorization
