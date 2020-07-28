@@ -5,12 +5,24 @@ var user        = require("../models/user");
 var tag         = require("../models/tag");
 var middleware  = require("../middleware");
 
-//tag create
+//tag create form
 router.post("/create", middleware.isAdmin, function(req,res){
 
 });
 
-//tag delete
+
+//tag create form
+router.post("/create", middleware.isAdmin, function(req,res){
+
+});
+
+
+//tag create form
+router.post("/create", middleware.isAdmin, function(req,res){
+
+});
+
+//tag delete req
 router.delete("/delete/:id", middleware.isAdmin, function(req,res){
 
 });
