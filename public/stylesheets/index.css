@@ -1,0 +1,102 @@
+
+body{
+   width: 100%;
+   background: #E0EAFC;  /* fallback for old browsers */
+    
+}
+#header{
+    color: white;
+}
+
+#header .jumbotron{
+    background: #005C97;  /* fallback for old browsers */
+    
+}
+
+  
+    
+#header h1{
+    font-family: 'Shadows Into Light Two', cursive;
+    
+}
+#header p{
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.scallop-up{
+    height:30px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#005C97), color-stop(0.49, #005C97), color-stop(0.51, #E0EAFC), to(#E0EAFC));
+  -webkit-background-size: 49px 100%;
+  }
+  
+
+.scallop-down{
+    height:70px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#005C97), color-stop(0.49, #005C97), color-stop(0.51, #E0EAFC), to(#E0EAFC));
+  -webkit-background-size: 49px 100%;
+  }
+
+#login{
+    position: relative;
+    text-align: center;
+
+}
+
+ /* img{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    width: 100%;
+    max-height: 520px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+#login{
+    border-right: 3px solid #005C97;
+}
+#login h1{
+    font-family: 'Handlee', cursive;
+}
+#login p{
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+}
+
+#login a{
+    color: black;
+}
+
+#login a:hover{
+    color: #005C97;
+    text-decoration: none;
+}
+
+
+#signUp h1{
+    font-family: 'Handlee', cursive;
+}
+
+#signUp p{
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+}
+#signUp a{
+    color: black;
+}
+
+#signUp a:hover{
+    color: #005C97;
+    text-decoration: none;
+}
+
+#quote blockquote{
+    border: 1px solid white;
+}
