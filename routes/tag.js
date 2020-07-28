@@ -5,8 +5,8 @@ var user        = require("../models/user");
 var tag         = require("../models/tag");
 var middleware  = require("../middleware");
 
-//tag create form
-router.post("/create", middleware.isAdmin, function(req,res){
+//tag create req
+router.post("/new", middleware.isAdmin, function(req,res){
 
 });
 
