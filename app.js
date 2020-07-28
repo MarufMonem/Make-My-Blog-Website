@@ -81,7 +81,7 @@ app.use("/tag",tagRoutes);
 app.use("/tagRequest",tagRequestRoutes);
 app.use("/update",updateRoutes);
 
-app.listen(5501, "127.0.0.1", function () {
+app.listen(5500, "127.0.0.1", function () {
     console.log("Local blog app has started");
 })
 
