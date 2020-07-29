@@ -32,7 +32,7 @@ router.post("/register", function(req,res){
 
 //Faq page
 router.get("/faq", function(req,res){
-res.send("Reached");
+    res.render("faq");
 });
 
 // Update information page
