@@ -11,6 +11,12 @@ var userSchema = new mongoose.Schema({
     gender:         String,
     description:    String,
     public:         {type: Boolean, default:false},
+    subscribed:[
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "user",
+        }
+    ],
     likes:[
         {
             type: mongoose.Schema.Types.ObjectId,

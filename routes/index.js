@@ -22,7 +22,7 @@ router.post("/login", function(req,res){
     
 // Registration page
 router.get("/register", function(req,res){
-res.send("Reached");
+    res.render("register");
 });
 
 // Registration page req

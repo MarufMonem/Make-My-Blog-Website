@@ -1,0 +1,126 @@
+<%- include("../views/partials/header") %>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="register.css">
+<title>Register | Make My Blog</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="/"><i class="fas fa-pen-nib"></i> Make My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Blogs</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                </div>
+
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="/register">Sign Up</a>
+                    <a class="nav-item nav-link " href="/login">Login</a>
+                </div>
+            </div>
+
+        </nav>
+    </section>
+
+    <!-- Form and image -->
+    <section>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center my-0 py-0">
+                <div id="leftHeader" class="col-12  d-none d-md-flex px-0  align-items-center">
+                    <div class="centered w-75 mx-auto text-center">
+                        <h2>Register</h2>
+                        <p class="lead">Sign up starting writing beautiful blogs through our website.</p>
+                    </div>
+                </div>
+
+                <!-- Form Starts -->
+                <div id="rightForm" class="col-7 py-3 align-items-center text-center">
+                    <!-- <p>Fill the the form with your credentials</p> -->
+                    <form action="/register" method="post">
+                        <div id="mobileScreenHeader" class="d-md-none">
+                            <h2 class="display-4 ">Register</h2>
+                            <p class="lead">Sign up starting writing beautiful blogs through our website.</p>
+                            <hr>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">User Name</label>
+                            <input type="text" class="form-control w-75 mx-auto" placeholder="Enter your name"
+                                name="username" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Profile Picture</label>
+                            <input type="text" class="form-control w-75 mx-auto"
+                                placeholder="Enter a link of your picture" name="image" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control w-75 mx-auto" placeholder="Enter email" name="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Age</label>
+                            <input type="number" class="form-control w-75 mx-auto" placeholder="Enter your age"
+                                name="age" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Gender</label>
+                            <select class="form-control w-75 mx-auto" name="gender" required>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                                <option>Dont want to mention</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Do you want your profile to be public?</label>
+                            <select class="form-control w-75 mx-auto" name="public" required>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                            <small class="pt-2">If you select no then your blogs would be private too.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">How would you describe yourself?</label>
+                            <textarea class="form-control w-75 mx-auto" rows="4"
+                                placeholder="Write something about yourself" name="description" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control w-75 mx-auto" placeholder="Password" required>
+                        </div>
+                        <small class="form-text text-muted pb-3">We'll never share your email with anyone
+                            else.</small>
+                        <button type="submit" class="w-50">Submit</button>
+                    </form>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <%- include("../views/partials/bottomNavbar") %>
+
+    </div>
+
+
+    <%- include("../views/partials/footer") %>
