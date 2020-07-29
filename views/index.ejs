@@ -7,6 +7,28 @@
 
 <body>
 
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="/"><i class="fas fa-pen-nib"></i> Make My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Blogs</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                </div>
+
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#">Sign Up</a>
+                    <a class="nav-item nav-link" href="#">Register</a>
+                </div>
+            </div>
+
+        </nav>
+    </section>
 
     <!-- //Header Image -->
     <div class="scallop-up"></div>
@@ -36,58 +58,74 @@
         <div class="scallop-down"></div>
     </section>
 
-    <!-- //login and sign up -->
-    <div class="container-fluid">
-        <section id="part2 mb-2">
-            <div class="row">
-                <div id="login" class="col-md-6 px-0 pt-5">
-                    <div class="align-items-center">
-                        <a href="">
-                            <p class="display-4 text-center"><i class="fas fa-user"></i></p>
-                            <h1 class="display-4 text-center">Login</h1>
-                        </a>
-                        <p class="lead text-center">Login with your credentials and start writing amazing blogs</p>
+    <section id="why">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <h1>What makes us unique?</h1>
+                    <p>Among hundred other blogging websites why should i go for this?</p>
+                </div>
+                <div class="col-md-6 text-justify px-md-2 px-lg-5">
+                    <p class="px-md-1 px-lg-5">
+                        Make my blog is a lightweight website that focuses on <span> speed </span> but not comprising
+                        the overall looks and smoothness.
+                        This is not just a blogging website, it can be your <span> diary </span>too. <span> Share
+                        </span>the
+                        blogs you want your followers to see. You can show your appreciation of
+                        each other's blogs through <span> reactions and comments </span>.
+                        This website is not about one single type of blog but a combination of all.
+                        Here you can create your own s <span> tags </span>and make your blogs the first in that
+                        category!
+                    </p>
+                    <p class="text-center">Hope, you like my website.</p>
+                    <div class="row justify-content-center pt-1 pb-5">
+                        <div class="col-6">
+                            <a href="/register" class="btn btn-lg btn-light d-block">Sign Up Now</a>
+                        </div>
+                       
                     </div>
-                </div>
-                <div id="signUp" class="col-md-6 px-0 py-2 pt-5">
-                    <a href="">
-                        <p class="display-4 text-center"><i class="fas fa-user-plus"></i></p>
-                        <h1 class="display-4 text-center">Sign Up</h1>
-                    </a>
-                    <p class="lead text-center">Login with your credentials and lets start writing amazing blogs</p>
+                    
                 </div>
             </div>
-        </section>
-        
-        <!-- //Quote -->
-        
-        <section id="quote">
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <blockquote class="mb-0 text-center py-5">
-                        Blogging is a conversation, not a code.
-                    </blockquote>
-                </div>
+        </div>
+    </section>
 
-            </div>
-        </section>
-        
+    <div class="scallop-up"></div>
 
-        <!-- //Our picks -->
-        <section>
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <h1>Our Picks</h1>
-                </div>
+    <!-- //Our picks -->
+    <section id="topPicks">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h1>Top Picks</h1>
             </div>
-        </section>
+        </div>
 
         <!-- //top 3 -->
-        <section>
 
-        </section>
+        <div class="container">
+            <div class="row mx-auto pb-5">
+                <div class="col-lg-4 d-flex justify-content-center pt-3">
+                    <div id="blogCard" class="card" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            alt="Card image cap">
+                        <div class="card-body" >
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">Read</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
 
-        <%- include("../views/partials/bottomNavbar") %>
+    </section>
+    <div class="scallop-down"></div>
+
+    <%- include("../views/partials/bottomNavbar") %>
 
     </div>
 

@@ -7,79 +7,117 @@
 
 <body>
 
-    <div class="container-fluid">
-        <!-- //Header Image -->
-        <section id="header">
-            <div class="row ">
+
+    <!-- //Header Image -->
+    <div class="scallop-up"></div>
+    <section id="header">
+        <div class="container-fluid">
+            <div class="row mb-0 py-0">
 
                 <div class="col-12 px-0 ">
                     <div class="jumbotron mb-0">
                         <div class="container">
-                          <h1 class="display-3 text-center">Make My Blog </h1>
-                          <div class="col-10 mx-auto">
-                            <p class="lead text-center pt-2">
-                                The complete website that allows you to not only see what others have to say but gives you the ability to
-                                write your own blogs! And you can choose if you want to show it to everyone or not.
-                            </p>
-                          </div>
-                          
+                            <h1 class="display-3 text-center">Make My Blog </h1>
+                            <div class="col-10 mx-auto">
+                                <p class="lead text-center pt-2">
+                                    The complete website that allows you to not only see what others have to say but
+                                    gives you the ability to
+                                    write your own blogs! And you can choose if you want to show it to everyone or not.
+                                </p>
+                            </div>
+
                         </div>
-                      </div>
+                    </div>
                 </div>
-                
+
             </div>
 
-        </section>
-        <!-- //login and sign up -->
+        </div>
+        <div class="scallop-down"></div>
+    </section>
+
+    <!-- //login and sign up -->
+    <div class="container-fluid">
         <section id="part2 mb-2">
-            <div class="row mt-4">
-                <div id="login" class="col-6">
+            <div class="row">
+                <div id="login" class="col-md-6 px-0 pt-5">
                     <div class="align-items-center">
-                       
-                        <a href="#"> 
-                            <img src="https://images.unsplash.com/photo-1471970394675-613138e45da3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+                        <a href="">
                             <p class="display-4 text-center"><i class="fas fa-user"></i></p>
-                            <h1 class="display-5 text-center">Login</h1>
+                            <h1 class="display-4 text-center">Login</h1>
                         </a>
                         <p class="lead text-center">Login with your credentials and start writing amazing blogs</p>
                     </div>
-                   
                 </div>
-                <div id="signUp" class="col-6">
-                    
-                    <a href="#">
+                <div id="signUp" class="col-md-6 px-0 py-2 pt-5">
+                    <a href="">
                         <p class="display-4 text-center"><i class="fas fa-user-plus"></i></p>
-                        <h1 class="display-5 text-center">Sign Up</h1>
+                        <h1 class="display-4 text-center">Sign Up</h1>
                     </a>
                     <p class="lead text-center">Login with your credentials and lets start writing amazing blogs</p>
                 </div>
             </div>
-
         </section>
-
-        <!-- //Quote -->
-        <section>
+<!--         
+        //Quote
+        
+        <section id="quote">
             <div class="row justify-content-center">
-                <div class="col-10">
-                    <blockquote>
-
+                <div class="col-8">
+                    <blockquote class="mb-0 text-center py-5 blockquote">
+                        Blogging is a conversation, not a code.
                     </blockquote>
                 </div>
 
             </div>
         </section>
+         -->
 
         <!-- //Our picks -->
-        <section>
-<div class="row justify-content-center">
+        <section id="topPicks">
+            <div class="row justify-content-center mt-3">
                 <div class="col-10">
-                    <h1>Our Picks</h1>
+                    <h1>Top Picks</h1>
                 </div>
             </div>
         </section>
 
         <!-- //top 3 -->
         <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
