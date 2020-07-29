@@ -68,43 +68,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 } */
-#login{
-    border-right: 3px solid #005C97;
-}
-#login h1{
-    font-family: 'Handlee', cursive;
-}
-#login p{
-    font-family: 'Handlee', cursive;
-    font-weight: bold;
-}
 
-#login a{
-    color: black;
-}
-
-#login a:hover{
-    color: #005C97;
-    text-decoration: none;
-}
-
-
-#signUp h1{
-    font-family: 'Handlee', cursive;
-}
-
-#signUp p{
-    font-family: 'Handlee', cursive;
-    font-weight: bold;
-}
-#signUp a{
-    color: black;
-}
-
-#signUp a:hover{
-    color: #005C97;
-    text-decoration: none;
-}
 
 #why h1{
     font-family: 'Shadows Into Light Two', cursive;

@@ -34,20 +34,16 @@
     <section>
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center my-0 py-0">
-                <div class="col-12 col-md-6 d-none d-md-flex px-0 pb-5">
-                    <img src="https://images.unsplash.com/photo-1523465322945-c6b0013393bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-                        class="w-100" alt="">
-                    <div class="centered w-75 text-center">
+                <div id="leftHeader" class="col-12 col-md-5 d-none d-md-flex px-0  align-items-center">
+                    <div class="centered w-75 mx-auto text-center">
                         <h2>Login</h2>
                         <p class="lead">Writing amazing blogs are just a few clicks away</p>
-                        
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 text-center">
+                <div id="rightForm" class="col-12 col-md-6 py-5 align-items-center text-center">
                     <!-- <p>Fill the the form with your credentials</p> -->
                     <form action="/login" method="post">
-
                         <div id="mobileScreenHeader" class="d-md-none">
                             <h2 class="display-4 ">Login</h2>
                             <p class="lead">Writing amazing blogs are just a few clicks away</p>
@@ -84,95 +80,3 @@
 
 
     <%- include("../views/partials/footer") %>
-
-
-
-
-
-
-    body{
-    background: #F3E9D2;
-    overflow-x: hidden;
- }
- .navbar{
-    background-colF3E9D2;
-}
-.navbar a{
-    color: #114B5F;
-    font-size: 1.1rem;
-}
-.navbar a:hover{
-    color: #114B5F;
-    font-weight: bold;
-}
-
- img{
-    filter: blur(5px) brightness(85%);
-    -webkit-filter: blur(5px) brightness(85%);
-    width: 100%;
-    max-height: 80%;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.centered h2{
-    font-family: 'Shadows Into Light Two', cursive;
-    font-weight: bold;
-    font-size: 4.5rem;
-    
-}
-.centered p{
-    padding-top: 10px;;
-    font-family: 'Handlee', cursive;
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-}
-
-
-
-
-form{
-    font-family: 'Handlee', cursive;
-    font-size: 1.5rem;
-}
-
-form button{
-    background-color: #F3E9D2;
-    color: #1A936F;
-    border-radius: 8px;
-    border: 2px solid #1A936F;
-    font-weight: bold;
-}
-
-form button:hover{
-    background-color: #1A936F;
-    color: #F3E9D2;
-    border-radius: 8px;
-    border: 2px solid #1A936F;
-    font-weight: bold;
-}
-
-#footer .card{
-    background-color: #F3E9D2;
-    color: #114B5F;
-    font-size: 1.2rem;
-    border: none;
-}
-
-#footer i{
-    font-size: 2rem;
-    margin-right: 1rem;
-    color: #114B5F;
-}
-
-#footer i:hover{
-    color: #1A936F;
-    transition: 300ms;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-}

@@ -12,12 +12,22 @@ router.get("/", function(req,res){
 
 //login page
 router.get("/login", function(req,res){
-res.send("Reached");
+res.render("login");
 });
 
+//login req
+router.post("/login", function(req,res){
+    res.render("login");
+});
+    
 // Registration page
 router.get("/register", function(req,res){
 res.send("Reached");
+});
+
+// Registration page req
+router.post("/register", function(req,res){
+    res.send("Reached");
 });
 
 //Faq page
