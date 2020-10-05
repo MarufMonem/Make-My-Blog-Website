@@ -69,7 +69,9 @@ router.get("/updates", function(req,res){
 
 //logout handler
 router.get("/logout", middleware.isloggedIn ,function(req,res){
-    res.send("Reached");
+    req.logOut();
+    req.flash("success", "Logged you out");
+    res.redirect("/");
 });
 
 module.exports = router;
