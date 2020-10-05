@@ -30,8 +30,7 @@ router.post("/login", passport.authenticate("local", {
     
 // Registration page req
 router.post("/register", function(req,res){
-    // res.send("Reached");
-    // res.send(req.body.user);
+
     user.register(
         new user(req.body.user), req.body.password, function(err, newUser){
             if(err){
