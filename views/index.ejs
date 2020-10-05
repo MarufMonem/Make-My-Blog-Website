@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+    <%- include("../views/partials/alertMsgInteractive") %>  
     <section id="navbar">
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="/"><i class="fas fa-pen-nib"></i> Make My Blog</a>
@@ -19,7 +19,7 @@
                     <a class="nav-item nav-link" href="#">Blogs</a>
                     <a class="nav-item nav-link" href="#">About Us</a>
                     <a class="nav-item nav-link" href="/faq">Faq</a>
-                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-item nav-link" href="/updates">Updates</a>
                 </div>
 
                 <%- include("../views/partials/loginInfo") %>  
@@ -28,6 +28,8 @@
 
         </nav>
     </section>
+
+    <%- include("../views/partials/alertMsg") %>
 
     <!-- //Header Image -->
     <div class="scallop-up"></div>

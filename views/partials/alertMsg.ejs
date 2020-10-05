@@ -1,0 +1,20 @@
+<div id="alertMsg" class="container-fluid my-0 py-0 px-0 mx-0 my-0 ">
+    <!-- Checking error -->
+    <% if(error && error.length > 0){ %>
+    <script>
+        alertJS();
+    </script>
+    <div class="alert alert-danger text-center my-0 py-2" role="alert">
+        <%= error %>
+    </div>
+    <% } %>
+    <!-- Checking Success -->
+    <% if(success && success.length > 0){ %>
+    <script>
+        alertJS();
+    </script>
+    <div class="alert alert-success text-center  my-0 py-2" role="alert">
+        <%= success %>
+    </div>
+    <% } %>
+</div>

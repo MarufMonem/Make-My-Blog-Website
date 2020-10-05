@@ -64,7 +64,7 @@ router.get("/faq", function(req,res){
 
 // Update information page
 router.get("/updates", function(req,res){
-    res.send("Reached");
+    res.render("update");
 });
 
 //logout handler
