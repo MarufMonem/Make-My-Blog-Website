@@ -1,0 +1,88 @@
+body{
+    background-color: #1A936F;
+    overflow-x: hidden;
+ }
+
+.navbar a{
+    color: #F3E9D2;
+    font-size: 1.1rem;
+}
+.navbar a:hover{
+    color: #114B5F;
+    font-weight: bold;
+}
+.navbar .active{
+    color: black;
+    font-weight: bold;
+}
+#leftHeader{
+    
+    height: 180px;
+}
+
+#rightForm{
+    background-color: #C6DABF;
+    /* border: 5px solid #F3E9D2; */
+    border-radius: 12px;
+    /* height: 380px; */
+}
+
+.centered h2{
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+    font-size: 4.5rem;
+    
+}
+.centered p{
+    padding-top: 10px;;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+form label{
+    font-family: 'Handlee', cursive;
+    font-size: 1.5rem;
+}
+form small{
+    font-size: 1.02rem;
+    color: brown;
+}
+
+form button{
+    /* background-color: #F3E9D2; */
+    color: #1A936F;
+    border-radius: 8px;
+    border: 2px solid #1A936F;
+    font-weight: bold;
+    height: 40px;
+}
+
+form button:hover{
+    background-color: #1A936F;
+    color: #F3E9D2;
+    border-radius: 8px;
+    border: 2px solid #1A936F;
+    font-weight: bold;
+}
+
+#footer .card{
+    background-color: #1A936F;
+    color: #F3E9D2;
+    font-size: 1.2rem;
+    border: none;
+}
+
+#footer i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #C6DABF;
+}
+
+#footer i:hover{
+    color: black;
+    transition: 200ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}

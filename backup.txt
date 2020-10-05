@@ -1,0 +1,178 @@
+<%- include("../views/partials/header") %>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+<title>Login | Make My Blog</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="/"><i class="fas fa-pen-nib"></i> Make My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Blogs</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                </div>
+
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="/register">Sign Up</a>
+                    <a class="nav-item nav-link active" href="/login">Login</a>
+                </div>
+            </div>
+
+        </nav>
+    </section>
+
+    <!-- Form and image -->
+    <section>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center my-0 py-0">
+                <div class="col-12 col-md-6 d-none d-md-flex px-0 pb-5">
+                    <img src="https://images.unsplash.com/photo-1523465322945-c6b0013393bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+                        class="w-100" alt="">
+                    <div class="centered w-75 text-center">
+                        <h2>Login</h2>
+                        <p class="lead">Writing amazing blogs are just a few clicks away</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 text-center">
+                    <!-- <p>Fill the the form with your credentials</p> -->
+                    <form action="/login" method="post">
+
+                        <div id="mobileScreenHeader" class="d-md-none">
+                            <h2 class="display-4 ">Login</h2>
+                            <p class="lead">Writing amazing blogs are just a few clicks away</p>
+                            <hr>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control w-75 mx-auto" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control w-75 mx-auto" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="w-50">Submit</button>
+                    </form>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <%- include("../views/partials/bottomNavbar") %>
+
+    </div>
+
+
+    <%- include("../views/partials/footer") %>
+
+
+
+
+
+
+    body{
+    background: #F3E9D2;
+    overflow-x: hidden;
+ }
+ .navbar{
+    background-colF3E9D2;
+}
+.navbar a{
+    color: #114B5F;
+    font-size: 1.1rem;
+}
+.navbar a:hover{
+    color: #114B5F;
+    font-weight: bold;
+}
+
+ img{
+    filter: blur(5px) brightness(85%);
+    -webkit-filter: blur(5px) brightness(85%);
+    width: 100%;
+    max-height: 80%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered h2{
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+    font-size: 4.5rem;
+    
+}
+.centered p{
+    padding-top: 10px;;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+
+
+
+form{
+    font-family: 'Handlee', cursive;
+    font-size: 1.5rem;
+}
+
+form button{
+    background-color: #F3E9D2;
+    color: #1A936F;
+    border-radius: 8px;
+    border: 2px solid #1A936F;
+    font-weight: bold;
+}
+
+form button:hover{
+    background-color: #1A936F;
+    color: #F3E9D2;
+    border-radius: 8px;
+    border: 2px solid #1A936F;
+    font-weight: bold;
+}
+
+#footer .card{
+    background-color: #F3E9D2;
+    color: #114B5F;
+    font-size: 1.2rem;
+    border: none;
+}
+
+#footer i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #114B5F;
+}
+
+#footer i:hover{
+    color: #1A936F;
+    transition: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}

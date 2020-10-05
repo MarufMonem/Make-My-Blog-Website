@@ -1,0 +1,134 @@
+<%- include("../views/partials/header") %>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+<title>Home | Make My Blog</title>
+</head>
+
+<body>
+
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="/"><i class="fas fa-pen-nib"></i> Make My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Blogs</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link" href="/faq">Faq</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                </div>
+
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="/register">Sign Up</a>
+                    <a class="nav-item nav-link" href="/login">Login</a>
+                </div>
+            </div>
+
+        </nav>
+    </section>
+
+    <!-- //Header Image -->
+    <div class="scallop-up"></div>
+    <section id="header">
+        <div class="container-fluid">
+            <div class="row mb-0 py-0">
+
+                <div class="col-12 px-0 ">
+                    <div class="jumbotron mb-0">
+                        <div class="container">
+                            <h1 class="display-3 text-center">Make My Blog </h1>
+                            <div class="col-10 mx-auto">
+                                <p class="lead text-center pt-2">
+                                    The complete website that allows you to not only see what others have to say but
+                                    gives you the ability to
+                                    write your own blogs! And you can choose if you want to show it to everyone or not.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="scallop-down"></div>
+    </section>
+
+    <section id="why">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <h1>What makes us unique?</h1>
+                    <p>Among hundred other blogging websites why should i go for this?</p>
+                </div>
+                <div class="col-md-6 text-justify px-md-2 px-lg-5">
+                    <p class="px-md-1 px-lg-5">
+                        Make my blog is a lightweight website that focuses on <span> speed </span> but not comprising
+                        the overall looks and smoothness.
+                        This is not just a blogging website, it can be your <span> diary </span>too. <span> Share
+                        </span>the
+                        blogs you want your followers to see. You can show your appreciation of
+                        each other's blogs through <span> reactions and comments </span>.
+                        This website is not about one single type of blog but a combination of all.
+                        Here you can create your own s <span> tags </span>and make your blogs the first in that
+                        category!
+                    </p>
+                    <p class="text-center">Hope, you like my website.</p>
+                    <div class="row justify-content-center pt-1 pb-5">
+                        <div class="col-6">
+                            <a href="/register" class="btn btn-lg btn-light d-block">Sign Up Now</a>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="scallop-up"></div>
+
+    <!-- //Our picks -->
+    <section id="topPicks">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h1>Top Picks</h1>
+            </div>
+        </div>
+
+        <!-- //top 3 -->
+
+        <div class="container">
+            <div class="row mx-auto pb-5">
+                <div class="col-lg-4 d-flex justify-content-center pt-3">
+                    <div id="blogCard" class="card" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            alt="Card image cap">
+                        <div class="card-body" >
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">Read</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </section>
+    <div class="scallop-down"></div>
+
+    <%- include("../views/partials/bottomNavbar") %>
+
+    </div>
+
+
+    <%- include("../views/partials/footer") %>
