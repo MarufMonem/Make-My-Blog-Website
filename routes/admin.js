@@ -10,6 +10,11 @@ router.get("/", middleware.isAdmin, function(req,res){
     res.send("Reached");
 });
 
+//faq page for admins
+router.get("/faq", middleware.isAdmin, function(req,res){
+    res.render("faqAdmin");
+});
+
 //pending reequest
 router.get("/pendingBlogs", middleware.isAdmin, function(req,res){
     res.send("Reached");
