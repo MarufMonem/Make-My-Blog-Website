@@ -7,26 +7,8 @@
 
 <body>
 
-    <section id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand" href="/"><i class="fas fa-pen-nib"></i> Make My Blog</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Admin</a>
-                    <a class="nav-item nav-link" href="#">Blogs</a>
-                    <a class="nav-item nav-link active" href="/faq/admin">Faq</a>
-                    <a class="nav-item nav-link" href="#">Updates</a>
-                </div>
+    <%- include("../views/partials/adminNav") %>
 
-                <%- include("../views/partials/loginInfo") %>
-            </div>
-
-        </nav>
-    </section>
     <section>
         <!-- //Header Image -->
         <div class="scallop-up"></div>
@@ -40,19 +22,22 @@
     <!-- Body content -->
     <section>
         <div class="container-fluid">
+            <!-- <div class="sidenav" id="sideNav">
+                <a href="#table" class="btn btn-light d-block mb-2">All faq</a>
+                <a href="#form" class="btn btn-light d-block mb-2">Create new</a>
+            </div> -->
             <div class="row">
                 <!-- naviagtion button -->
-                <div class="col-md-3">
-                    <a href="#" class="btn btn-light d-block mb-2">All faq</a>
-                    <a href="#" class="btn btn-light d-block mb-2">Create new</a>
+                <div class="col-md-3" id="sideNav">
+                    <a href="#table" class="btn btn-light d-block mb-2">All faq</a>
+                    <a href="#form" class="btn btn-light d-block mb-2">Create new</a>
                 </div>
 
                 <!-- nav content -->
-                <div class="col-md-9">
-
+                <div class="col-sm=12 col-md-9" id="table">
                     <!-- table -->
-                    <div class="container w-75">
-                        <table class="table table-hover  table-bordered table-dark">
+                    <div class="mx-auto table-responsive">                   
+                        <table class="table  table-hover table-dark ">
                             <thead class="thead-light">
                                 <tr class="text-center">
                                     <th>ID</th>
@@ -65,7 +50,7 @@
                                 </tr>
                             </thead>
 
-                            <tr>
+                            <tr class="text-center">
                                 <td>a</td>
                                 <td>b</td>
                                 <td>c</td>
@@ -74,22 +59,16 @@
                                 <td>f</td>
                                 <td>g</td>
                             </tr>
-                            <tr>
-                                <td>a</td>
-                                <td>b</td>
-                                <td>c</td>
-                                <td>d</td>
-                                <td>e</td>
-                                <td>f</td>
-                                <td>g</td>
-                            </tr>
+
+
 
                         </table>
                     </div>
 
-                    <!-- Form -->
-
-                    <form class="w-50 justify-content-center mx-auto" action="/faq/create" method="POST">
+                    <div class="container-fluid">
+                                            <!-- Form -->
+                    <h1 class="text-white text-center">Add a new FAQ</h1>
+                    <form class="justify-content-center mx-auto w-50" action="/faq/create" method="POST" id="form">
                         <div class="form-group">
                             <label >Title</label>
                             <input type="name" class="form-control" placeholder="Enter title" name=faq[title]>
@@ -102,8 +81,10 @@
                             <label >Description</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-danger w-50">Submit</button>
+                        <button type="submit" class="btn btn-danger w-50 mx-auto">Submit</button>
                     </form>
+                    </div>
+
                 </div>
 
 

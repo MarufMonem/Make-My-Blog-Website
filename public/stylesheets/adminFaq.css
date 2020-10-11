@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+  }
 body{
     /* width: 100%; */
     background: #242424;  /* fallback for old browsers */
@@ -43,9 +45,17 @@ body{
      -webkit-background-size: 49px 100%;
 }
 
-#sideNav{
-    border-right:1px solid white ;
-}
+
+.sidenav {
+    width: 11rem;
+    position: fixed;
+    z-index: 1;
+    top: 350px;
+    left: 50px;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+
 
  #footer .card{
      background-color: #242424;

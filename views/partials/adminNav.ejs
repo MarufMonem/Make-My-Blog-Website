@@ -1,0 +1,36 @@
+<section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="/"><i class="fas fa-pen-nib"></i> Make My Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/admin">Admin</a>
+                <a class="nav-item nav-link" href="/admin/blog">Blogs</a>
+                <a class="nav-item nav-link active" href="/admin/faq">Faq</a>
+                <a class="nav-item nav-link" href="/admin/faq">Updates</a>
+            </div>
+
+            <% if(!currentUser){%>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="/register">Sign Up</a>
+                    <a class="nav-item nav-link" href="/login">Login</a>
+                </div>
+                <%}else if(currentUser.admin){%>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="/register"><%=currentUser.username%></a>
+                        <a class="nav-item nav-link" href="/admin/">Admin</a>
+                        <a class="nav-item nav-link" href="/logout">Log out</a>
+                    </div>
+                    <%}else{%>    
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="/register"><%=currentUser.username%></a>
+                        <a class="nav-item nav-link" href="/logout">Log out</a>
+                    </div>
+                <%}%>  
+        </div>
+
+    </nav>
+</section>

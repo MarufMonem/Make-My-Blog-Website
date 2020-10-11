@@ -57,10 +57,6 @@ router.post("/register", function(req,res){
     )
 });
 
-//Faq page
-router.get("/faq", function(req,res){
-    res.render("faq");
-});
 
 // Update information page
 router.get("/updates", function(req,res){
