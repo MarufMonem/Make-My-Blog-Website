@@ -6,7 +6,7 @@
     <%}else if(currentUser.admin){%>
         <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="/register"><%=currentUser.username%></a>
-            <a href="/admin/">Admin</a>
+            <a class="nav-item nav-link" href="/admin/">Admin</a>
             <a class="nav-item nav-link" href="/logout">Log out</a>
         </div>
         <%}else{%>    

@@ -6,14 +6,14 @@ var faq         = require("../models/faq");
 var middleware  = require("../middleware");
 
 //show all faq
-router.get("/", function(req,res){
-res.send("Reached");
+router.get("/admin", function(req,res){
+    res.render("faqAdmin");
 });
 
 //Create a new faq form page
-router.get("/new", middleware.isAdmin, function(req,res){
-res.send("Reached");
-});
+// router.get("/new", middleware.isAdmin, function(req,res){
+//     res.render("faqCreate");
+// });
 
 //update faq form page
 router.get("/update", middleware.isAdmin, function(req,res){
