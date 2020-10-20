@@ -9,7 +9,13 @@ var middleware  = require("../middleware");
 
 //Faq page
 router.get("/", function(req,res){
-    
+    faq.find({}, function(err, allFaq){
+        if(err){
+            console.log("Couldnt get FAQ");
+        }else{
+            res.render("faq",{allFaq:allFaq});
+        }
+    })
 });
 
 //update faq form page
@@ -29,7 +35,7 @@ router.post("/create", middleware.isAdmin, function(req,res){
                 if(err){
                     console.log("Couldnt save FAQ");
                 }else{
-                    console.log("FAQ added");
+                    console.log("FAQ added: " + savedFaq);
                     req.flash("success","FAQ created.");
                     res.redirect("back");
                 }

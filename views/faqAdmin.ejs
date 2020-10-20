@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+    <%- include("../views/partials/alertMsgInteractive") %>
     <%- include("../views/partials/adminNav") %>
 
     <section>
@@ -19,6 +19,8 @@
         <div class="scallop-down"></div>
     </section>
 
+    <%- include("../views/partials/alertMsg") %>
+    <br>
     <!-- Body content -->
     <section>
         <div class="container-fluid">
@@ -79,7 +81,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" name=faq[content] rows="3" ></textarea>
                             </div>
                                  <button type="submit" class="btn btn-danger w-50" >Submit</button>                    
                         </form>
@@ -97,5 +99,4 @@
     </section>
 
     <%- include("../views/partials/bottomNavbar") %>
-
     <%- include("../views/partials/footer") %>
