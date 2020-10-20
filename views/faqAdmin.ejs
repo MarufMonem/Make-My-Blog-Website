@@ -20,7 +20,7 @@
     </section>
 
     <%- include("../views/partials/alertMsg") %>
-    
+
     <br>
     <!-- Body content -->
     <section>
@@ -43,7 +43,6 @@
                         <table class="table  table-hover table-dark ">
                             <thead class="thead-light">
                                 <tr class="text-center">
-                                    <th>ID</th>
                                     <th>Title</th>
                                     <th>Image</th>
                                     <th>Desription</th>
@@ -52,22 +51,38 @@
                                     <th>Delete</th>
                                 </tr>
                             </thead>
-
+                            <%allFaq.forEach(function(faq){
+                                var date = new Date(faq.created);
+                                %>
                             <tr class="text-center">
-                                <td>a</td>
-                                <td>b</td>
-                                <td>c</td>
-                                <td>d</td>
-                                <td>e</td>
-                                <td>f</td>
-                                <td>g</td>
+                                <td> <a href="/faq" id="faqTitle"><%= faq.title %> </a> </td>
+                                <td>
+                                    <%if(!faq.image){ %>
+                                    <p>No image</p>
+                                    <%}else{%>
+                                    <img class="img-thumbnail" src="<%= faq.image %>" alt="faq image">
+                                    <%}%>
+                                    
+                                </td>
+                                <td><%= faq.content.substring(0,50) %> ...</td>
+                                <td><%=date.toDateString()%></td>
+                                <td>
+                                    <a href="/faq/update/<%=faq._id%>" class="btn btn-sm btn-outline-light"><i
+                                            class="far fa-edit"></i></a>
+                                </td>
+                                <td>
+                                    <form action="/faq/<%=faq._id%>?_method=DELETE" method="POST">
+                                        <button class="btn btn-sm btn-outline-danger"><i
+                                                class="far fa-trash-alt"></i></button>
+                                    </form>
+                                </td>
                             </tr>
 
-
+                            <%})%>
 
                         </table>
                     </div>
-
+                    <hr>
                     <div class="container-fluid">
                         <!-- Form -->
                         <h1 class="text-white text-center">Add a new FAQ</h1>
@@ -82,9 +97,9 @@
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control" name=faq[content] rows="3" ></textarea>
+                                <textarea class="form-control" name=faq[content] rows="3" placeholder="Description here"></textarea>
                             </div>
-                                 <button type="submit" class="btn btn-danger w-50" >Submit</button>                    
+                            <button type="submit" class="btn btn-danger w-50">Submit</button>
                         </form>
                     </div>
 

@@ -46,7 +46,7 @@ body{
 }
 
 #sideNav{
-    border-right: 1px solid white;
+    border-right: 5px dotted #1A936F;
 }
 
 
@@ -60,7 +60,20 @@ body{
     padding: 8px 0;
   }
 
-
+#faqTitle{
+    color: white;
+    text-decoration: underline;
+}
+#faqTitle:hover{
+    color: wheat;
+    text-decoration: underline;
+}
+hr{
+    border: 1px solid #1A936F;
+}
+label{
+    color: white;
+}
  #footer .card{
      background-color: #242424;
      color: #ffffff;

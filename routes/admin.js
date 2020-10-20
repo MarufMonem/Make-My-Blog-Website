@@ -12,7 +12,13 @@ router.get("/", middleware.isAdmin, function(req,res){
 
 //faq page for admins
 router.get("/faq", middleware.isAdmin, function(req,res){
-    res.render("faqAdmin");
+    faq.find({}, function(err, allFaq){
+        if(err){
+            console.log("Couldnt get FAQ");
+        }else{
+            res.render("faqAdmin",{allFaq:allFaq});
+        }
+    })
 });
 
 //pending reequest
