@@ -30,18 +30,23 @@
                 <form class=" mx-auto w-75" action="/faq/update/<%=foundFaq._id%>?_method=PUT" method="POST" id="form">
                     <div class="form-group">
                         <label>Title</label>
-                        <input type="name" class="form-control" placeholder="Enter title" name=faq[title] value="<%=foundFaq.title %>">
+                        <input type="name" class="form-control" placeholder="Enter title" name=faq[title]  required value="<%=foundFaq.title %>">
                     </div>
                     <div class="form-group">
                         <label>Image</label>
                         <input type="name" class="form-control" placeholder="Enter image link" name=faq[image] value="<%=foundFaq.image %>">
                     </div>
                     <div>
-                        <img src="<%=foundFaq.image%>" alt="" class="img-thumbnail mb-2">
+                        <%if(!foundFaq.image){ %>
+                            <p class="text-white">No image provided</p>
+                            <%}else{%>
+                                <img src="<%=foundFaq.image%>" alt="" class="img-thumbnail mb-2">
+                            <%}%>
+                        
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control" name=faq[content] rows="10"
+                        <textarea class="form-control" name=faq[content] rows="10" required 
                             placeholder="Description here"><%=foundFaq.content %></textarea>
                     </div>
                     <button type="submit" class="btn btn-danger w-100">Submit</button>

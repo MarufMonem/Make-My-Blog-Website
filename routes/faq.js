@@ -54,7 +54,15 @@ router.post("/create", middleware.isAdmin, function(req,res){
 
 //faq update req
 router.put("/update/:id", middleware.isAdmin, function(req,res){
-    res.send("Reached");
+    faq.findByIdAndUpdate(req.params.id, req.body.faq,function(err, updatedFaq){
+        if(err){
+            console.log("Couldnt update FAQ");
+            req.flash("error","Couldnt remove FAQ " + err);
+        }else{
+            req.flash("success","FAQ has been updated.");
+            res.redirect("/admin/faq");
+        }
+    })
 });
 
 //faq delete req
