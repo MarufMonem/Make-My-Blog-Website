@@ -51,7 +51,15 @@ router.put("/update/:id", middleware.isAdmin, function(req,res){
 
 //faq delete req
 router.delete("/delete/:id", middleware.isAdmin, function(req,res){
-    res.send("Reached");
+    faq.findById(req.params.id, function(err, foundFaq){
+        if (err) {
+            req.flash("error","Couldnt remove FAQ " + err);
+        } else {
+            req.flash("success","FAQ has been removed.");
+            foundFaq.remove();
+        }
+        res.redirect("back");
+    });
 });
 
 module.exports = router;

@@ -60,7 +60,7 @@
                                     <%if(!faq.image){ %>
                                     <p>No image</p>
                                     <%}else{%>
-                                    <img class="img-thumbnail" src="<%= faq.image %>" alt="faq image">
+                                    <img class="" src="<%= faq.image %>" alt="faq image">
                                     <%}%>
                                     
                                 </td>
@@ -71,7 +71,7 @@
                                             class="far fa-edit"></i></a>
                                 </td>
                                 <td>
-                                    <form action="/faq/<%=faq._id%>?_method=DELETE" method="POST">
+                                    <form action="/faq/delete/<%=faq._id%>?_method=DELETE" method="POST">
                                         <button class="btn btn-sm btn-outline-danger"><i
                                                 class="far fa-trash-alt"></i></button>
                                     </form>

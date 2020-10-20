@@ -68,6 +68,11 @@ body{
     color: wheat;
     text-decoration: underline;
 }
+img{
+    max-width: 250px;
+    border: 3px solid #1A936F;
+    border-radius: 6px;
+}
 hr{
     border: 1px solid #1A936F;
 }
