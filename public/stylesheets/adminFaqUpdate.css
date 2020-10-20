@@ -1,0 +1,88 @@
+
+body{
+    /* width: 100%; */
+    background: #242424;  /* fallback for old browsers */
+    overflow-x: hidden;
+ }
+ .navbar{
+     background-color: #242424;
+ }
+
+ .navbar a:hover{
+     font-weight: bold;
+ }
+
+ #header{
+     color: #242424;
+     background-color: #1ab989;
+ }
+
+ #header h1{
+     font-family: 'Shadows Into Light Two', cursive;
+ }
+ #header p{
+     font-family: 'Handlee', cursive;
+     font-weight: bold;
+     font-size: 1.5rem;
+     letter-spacing: 3px;
+ }
+ 
+ .scallop-up{
+     height:30px;
+     width:100%;
+     background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#1ab989), color-stop(0.49, #1ab989), color-stop(0.51, #242424), to(#242424));
+     -webkit-background-size: 49px 100%;
+   }
+ 
+ .scallop-down{
+     height:70px;
+     width:100%;
+     background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#1ab989), color-stop(0.49, #1ab989), color-stop(0.51, #242424), to(#242424));
+     -webkit-background-size: 49px 100%;
+}
+
+
+.sidenav {
+    width: 11rem;
+    position: fixed;
+    z-index: 1;
+    top: 350px;
+    left: 50px;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+
+#faqId{
+    color: #29d8a4;
+}
+
+hr{
+    border: 1px solid #1A936F;
+}
+label{
+    color: white;
+}
+ #footer .card{
+     background-color: #242424;
+     color: #ffffff;
+     font-size: 1.2rem;
+ }
+ 
+ #footer i{
+     font-size: 2rem;
+     margin-right: 1rem;
+     color: #ffffff;
+ }
+ 
+ #footer i:hover{
+     color: #1A936F;
+     transition: 300ms;
+     transition-property: all;
+     transition-timing-function: ease-in-out;
+ }
+ 
+ .fadeOutAlert{
+    display: none;
+    transition:display 4s;
+    transition-timing-function: ease-in-out;
+}

@@ -4,6 +4,7 @@ var router      = express.Router();
 var user        = require("../models/user");
 var faq         = require("../models/faq");
 var middleware  = require("../middleware");
+const { render } = require("ejs");
 
 
 
@@ -19,8 +20,15 @@ router.get("/", function(req,res){
 });
 
 //update faq form page
-router.get("/update", middleware.isAdmin, function(req,res){
-    res.send("Reached");
+router.get("/update/:id", middleware.isAdmin, function(req,res){
+    faq.findById(req.params.id, function(err, foundFaq){
+        if(err){
+            console.log("Couldnt get FAQ");
+            req.flash("error","Couldnt remove FAQ " + err);
+        }else{
+            res.render("adminFaqUpdate",{foundFaq:foundFaq});
+        }
+    })
 });
 
 

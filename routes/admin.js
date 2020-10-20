@@ -16,7 +16,7 @@ router.get("/faq", middleware.isAdmin, function(req,res){
         if(err){
             console.log("Couldnt get FAQ");
         }else{
-            res.render("faqAdmin",{allFaq:allFaq});
+            res.render("adminFaq",{allFaq:allFaq});
         }
     })
 });
