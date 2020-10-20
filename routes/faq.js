@@ -36,7 +36,7 @@ router.post("/create", middleware.isAdmin, function(req,res){
                     console.log("Couldnt save FAQ");
                 }else{
                     console.log("FAQ added: " + savedFaq);
-                    req.flash("success","FAQ created.");
+                    req.flash("success","FAQ Created.");
                     res.redirect("back");
                 }
             });

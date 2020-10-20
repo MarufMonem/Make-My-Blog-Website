@@ -10,11 +10,12 @@
     <% } %>
     <!-- Checking Success -->
     <% if(success && success.length > 0){ %>
-    <script>
-        alertJS();
-    </script>
+    
     <div class="alert alert-success text-center  mb-2 py-1 w-50 mx-auto" role="alert">
         <%= success %>
     </div>
+    <script>
+        alertJS();
+    </script>
     <% } %>
 </div>
