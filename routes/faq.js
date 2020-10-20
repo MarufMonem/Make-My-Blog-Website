@@ -6,8 +6,6 @@ var faq         = require("../models/faq");
 var middleware  = require("../middleware");
 const { render } = require("ejs");
 
-
-
 //Faq page
 router.get("/", function(req,res){
     faq.find({}, function(err, allFaq){
@@ -30,7 +28,6 @@ router.get("/update/:id", middleware.isAdmin, function(req,res){
         }
     })
 });
-
 
 //new faq req
 router.post("/create", middleware.isAdmin, function(req,res){
