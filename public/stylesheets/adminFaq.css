@@ -45,6 +45,10 @@ body{
      -webkit-background-size: 49px 100%;
 }
 
+#sideNav{
+    border-right: 1px solid white;
+}
+
 
 .sidenav {
     width: 11rem;

@@ -9,18 +9,33 @@ var middleware  = require("../middleware");
 
 //Faq page
 router.get("/", function(req,res){
-    res.render("faq");
+    
 });
 
 //update faq form page
 router.get("/update", middleware.isAdmin, function(req,res){
-res.send("Reached");
+    res.send("Reached");
 });
 
 
 //new faq req
 router.post("/create", middleware.isAdmin, function(req,res){
-    res.send("Reached");
+    faq.create(req.body.faq, function(err, newFaq){
+        if(err){
+            console.log("FAQ wasnt added");
+        }else{
+            
+            newFaq.save(function(err, savedFaq){
+                if(err){
+                    console.log("Couldnt save FAQ");
+                }else{
+                    console.log("FAQ added");
+                    req.flash("success","FAQ created.");
+                    res.redirect("back");
+                }
+            });
+        }
+    })
 });
 
 //faq update req
