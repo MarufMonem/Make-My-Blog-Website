@@ -149,3 +149,9 @@ body{
     transition-property: all;
     transition-timing-function: ease-in-out;
 }
+
+.fadeOutAlert{
+    display: none;
+    transition:display 4s;
+    transition-timing-function: ease-in-out;
+}
