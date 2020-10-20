@@ -58,10 +58,7 @@ router.post("/register", function(req,res){
 });
 
 
-// Update information page
-router.get("/updates", function(req,res){
-    res.render("update");
-});
+
 
 //logout handler
 router.get("/logout", middleware.isloggedIn ,function(req,res){

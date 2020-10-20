@@ -79,7 +79,7 @@ app.use("/comment",commentRoutes);
 app.use("/faq",faqRoutes);
 app.use("/tag",tagRoutes);
 app.use("/tagRequest",tagRequestRoutes);
-app.use("/update",updateRoutes);
+app.use("/updates",updateRoutes);
 
 app.listen(5500, "127.0.0.1", function () {
     console.log("Local blog app has started");

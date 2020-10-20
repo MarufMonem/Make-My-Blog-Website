@@ -6,7 +6,7 @@ var faq         = require("../models/faq");
 var middleware  = require("../middleware");
 const { render } = require("ejs");
 
-//Faq page
+//user side faq page
 router.get("/", function(req,res){
     faq.find({}, function(err, allFaq){
         if(err){
@@ -54,7 +54,7 @@ router.put("/update/:id", middleware.isAdmin, function(req,res){
     faq.findByIdAndUpdate(req.params.id, req.body.faq,function(err, updatedFaq){
         if(err){
             console.log("Couldnt update FAQ");
-            req.flash("error","Couldnt remove FAQ " + err);
+            req.flash("error","Couldnt update FAQ " + err);
         }else{
             req.flash("success","FAQ has been updated.");
             res.redirect("/admin/faq");
