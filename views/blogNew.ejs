@@ -1,0 +1,179 @@
+<%- include("../views/partials/header") %>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../blogNew.css">
+<title>New Blog | Make My Blog</title>
+</head>
+
+<body>
+    <%- include("../views/partials/alertMsgInteractive") %>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="/"><i class="fas fa-pen-nib"></i> Make My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/blogs/show">Blogs</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link" href="/faq">Faq</a>
+                    <a class="nav-item nav-link" href="/updates">Updates</a>
+                </div>
+
+                <%- include("../views/partials/loginInfo") %>
+            </div>
+
+        </nav>
+    </section>
+    <%- include("../views/partials/alertMsg") %>
+
+    <section>
+        <!-- //Header Image -->
+        <div class="scallop-up"></div>
+        <div id="header">
+            <h1 class="text-center display-3 py-3 mb-0">Create A New Blog</h1>
+            <p class="small text-center mb-0 pb-2">Show everyone your journey</p>
+        </div>
+
+        <div class="scallop-down"></div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-center py-2 mb-3" id="buttons">
+                <a class="btn btn-light btn-lg my-2 mx-3 w-50 active">Create</a>
+                <a class="btn btn-light btn-lg my-2 mx-3 w-50" href="#compliedContent">Compile</a>
+                <a class="btn btn-light btn-lg my-2 mx-3 w-50" href="#helpSection">Help</a>
+            </div>
+
+            <form action="/blogs" method="POST">
+                <!-- Title -->
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Title Of the Blog*</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Title" name="blog[title]" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Cover Image</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Cover Image Link" name="blog[coverImage]">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Description*</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"
+                            placeholder="Content here" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Age Restricted?</label>
+                    <div class="col-sm-10 mt-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="true"
+                                name="blog[ageRestriction]">
+                            <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="false"
+                                name="blog[ageRestriction]">
+                            <label class="form-check-label" for="inlineCheckbox1">No</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Public?</label>
+                    <div class="col-sm-10 mt-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="true"
+                                name="blog[public]">
+                            <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="false"
+                                name="blog[apublic">
+                            <label class="form-check-label" for="inlineCheckbox1">No</label>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-white">* Field are required</small>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-danger mt-2 w-50">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- The compiled Section -->
+
+    <section>
+        <div class="container my-4" id="compliedContent">
+            <h1 class="text-center text-white mt-3">Compiled Content</h1>
+
+            <!-- Card looks like -->
+            <section>
+                <h3 class="text-white text-center mb-4">This is how the card would look like:</h3>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-4">
+                        <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- The body -->
+            <section>
+                <div class="text-white text-justify my-4">
+                    <h1 class="text-center">How the content looks like:</h1>
+                    <h2 class="text-center">Title</h2>
+                    <img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1515876305430-f06edab8282a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+                    <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                   
+                </div>
+                 
+            </section>
+        </div>
+    </section>
+
+    <!-- Help section -->
+    <section>
+        <div class="container my-4" id="helpSection">
+            <h1 class="text-center text-white mt-3">The help Section</h1>
+            <p class="text-center text-white">Below we have some possible solves to of adding items to your blog</p>
+            <p class="text-center text-white">More help can be found <a
+                    href="https://www.w3schools.com/html/default.asp">here</a></p>
+            <div class="d-flex justify-content-center">
+
+                <button class="btn btn-info mx-1 my-2 w-50">How to add images</button>
+                <button class="btn btn-info mx-1 my-2 w-50">How to add videos</button>
+                <button class="btn btn-info mx-1 my-2 w-50">How to add GIFs</button>
+                <button class="btn btn-info mx-1 my-2 w-50">How do I make Content Blod</button>
+                <br>
+                <button class="btn btn-info mx-1 my-2 w-50">How do I make Content Italic</button>
+                <button class="btn btn-info mx-1 my-2 w-50">How do I make Content Underlined</button>
+                <button class="btn btn-info mx-1 my-2 w-50">How do I links</button>
+            </div>
+
+        </div>
+    </section>
+    </div>
+    </div>
+
+    <%- include("../views/partials/bottomNavbar") %>
+
+    <%- include("../views/partials/footer") %>

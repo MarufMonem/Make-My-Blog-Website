@@ -74,7 +74,7 @@ app.use(function(req,res,next){
 app.use("/",indexRoutes);
 app.use("/user",userRoutes);
 app.use("/admin",adminRoutes);
-app.use("/blog",blogRoutes);
+app.use("/blogs",blogRoutes);
 app.use("/comment",commentRoutes);
 app.use("/faq",faqRoutes);
 app.use("/tag",tagRoutes);

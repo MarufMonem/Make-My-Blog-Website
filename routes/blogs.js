@@ -4,9 +4,15 @@ var router      = express.Router();
 var user        = require("../models/user");
 var middleware  = require("../middleware");
 
+
+//show all blogs page
+router.get("/show", function(req,res){
+    res.render("blogs");
+});
+
 //new blog page form
-router.get("/new", middleware.isloggedIn, function(req,res){
-    res.send("Reached");
+router.get("/new", function(req,res){
+    res.render("blogNew");
 });
 
 //update blog page form
@@ -17,11 +23,6 @@ router.get("/update/:id", middleware.isBlogOwner, function(req,res){
 // Registration page
 router.delete("/delete/:id",middleware.isBlogOwner,  function(req,res){
     res.send("Reached");
-});
-
-//show all blogs page
-router.get("/show", function(req,res){
-res.send("Reached");
 });
 
 // like a particular blog req
