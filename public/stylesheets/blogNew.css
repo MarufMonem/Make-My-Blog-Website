@@ -65,6 +65,13 @@ body{
 
 }
 
+iframe{
+    width: auto;
+    margin: auto;
+    border: 5px solid whtie;
+    border-radius: 5px;
+}
+
 #helpSection{
     border-top: 6px solid #1A936F;
 }
