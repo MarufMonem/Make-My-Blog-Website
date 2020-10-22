@@ -56,9 +56,19 @@ body{
     border-bottom: 6px solid #1A936F;
 }
 
+.contentImg{
+    display: block;
+    max-width: 70%;
+    margin: auto;
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+
+}
+
 #helpSection{
     border-top: 6px solid #1A936F;
 }
+
 label{
     color: #e0e0e0;
 }
